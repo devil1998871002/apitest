@@ -63,13 +63,7 @@ html{
 	border-radius:20px ;
 }
 
-.header img{
-	display: flex;
-	position: fixed;
-	top: 3.5%;
-	padding-left: 5%;
-	
-}
+
 
 .header h1{
 	background-color: #fff;
