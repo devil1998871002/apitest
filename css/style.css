@@ -52,7 +52,8 @@ html{
 }
 
 .header{
-	position: relative;
+display: flex;
+border-bottom: 3px solid rgb(56, 54, 54);
 
 }
 
@@ -69,18 +70,23 @@ html{
 }
 
 .header img{
-	display: flex;
-	position: absolute;
-	padding-top: 2%;
-	padding-left: 5%;
-	
+	background-color: #fff;
+	flex-direction: row;
+	position: relative;
+	padding-top: 4px;
+	padding-left: 2px;
+
 }
 
 .header h1{
+	width: 100%;
+	flex-direction: row;
 	background-color: #fff;
 	text-align: center;
-	font-size: 80px;
-	padding: 50px;
+	font-size: 50px;
+	padding-top: 1.7%;
+	padding-bottom: 1.7%;
+
 }
 
 .dropdown{
@@ -93,24 +99,27 @@ html{
 
 }
 
+@media only screen and (max-width:685px){
 
+	.header{
+		display: flex;
+		flex-direction: row;
 
-@media only screen and (max-width:576px){
-
-	
+	}	
 
 	.header h1{
-		margin: 0 auto;
-		width: 99%;
-		height: 99%;
-		font-size: 99%;
+		padding: 3%;
+		font-size: 40px;
 	}
 
 	.header img{
-		position: absolute;
+	background-color: #fff;
+	object-fit: cover;
+	padding-top: 2px;
+	padding-left: 2px;
 
 	}
-	
+
 	.wrap{
 		max-width: 90%;
 		max-height: 85%;
@@ -118,6 +127,36 @@ html{
 
 	.dropdown{
 		width: 70%;
+
+	}
+
+}
+
+@media only screen and (max-width:576px){
+
+	.header{
+		height: 60px;
+	}
+
+	.header h1{
+		padding: 2% 2%;
+		font-size: 30px;
+	}
+
+	.header img{
+		padding-top: 2px;
+		padding-left: 2px;
+		object-fit: cover;
+
+	}
+
+	.wrap{
+		max-width: 90%;
+		max-height: 85%;
+	}
+
+	.dropdown{
+		width: 50%;
 
 	}
 
