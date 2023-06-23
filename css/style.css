@@ -95,7 +95,7 @@ html{
 
 
 
-@media only screen and (max-width:300px){
+@media only screen and (max-width:576px){
 
 	.header img{
 		position: absolute;
